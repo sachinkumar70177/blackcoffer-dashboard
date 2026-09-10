@@ -2,7 +2,7 @@ import axios from "axios";
 
 // With CRA's "proxy" field in package.json set to the backend, relative
 // paths are enough in development. In production, set REACT_APP_API_BASE.
-const BASE = process.env.REACT_APP_API_BASE || "";
+const BASE = process.env.REACT_APP_API_BASE_URL || "";
 console.log("API base URL:", BASE);
 export const api = axios.create({ baseURL: `${BASE}/api` });
 
